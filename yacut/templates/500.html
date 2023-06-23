@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Create short link{% endblock %}
+{% block content %}
+<main>
+    <section class="container my-5 px-4">
+        <div class="row my-3">
+          <div class="col-sm">
+            <h1 class="mb-5">Oops!</h1>
+            <p>Server error</p>
+            <p>
+              <a href="{{ url_for('index_view') }}">Back to main</a>
+            </p>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+    </section>
+</main>
+{% endblock content%}

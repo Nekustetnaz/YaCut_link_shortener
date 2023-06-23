@@ -1,37 +1,28 @@
-Клонировать репозиторий и перейти в него в командной строке:
+# Link shortener
 
-```
-git clone 
-```
+## Description
+This project makes your links shorter.<br>
+It provides web application access and API. 
 
+## Run service:
+To run the service, use the commands:
 ```
+git clone
 cd yacut
-```
-
-Cоздать и активировать виртуальное окружение:
-
-```
 python3 -m venv venv
-```
-
-* Если у вас Linux/macOS
-
-    ```
-    source venv/bin/activate
-    ```
-
-* Если у вас windows
-
-    ```
-    source venv/scripts/activate
-    ```
-
-Установить зависимости из файла requirements.txt:
-
-```
+source venv/bin/activate  # for Linux/MacOS
+source venv/scripts/activate  # for windows
 python3 -m pip install --upgrade pip
+pip install -r requirements.txt
+flask db init
+flask db migrate -m "comment"
+flask db upgrade 
 ```
 
-```
-pip install -r requirements.txt
-```
+## Technologies
+Python 3 <br>
+Flask <br>
+SQLAlchemy <br>
+
+## The author of the project
+Anton Akulov - https://github.com/Nekustetnaz
