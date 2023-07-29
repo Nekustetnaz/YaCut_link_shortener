@@ -1,10 +1,16 @@
-# Link shortener
+# «YaCut» - link shortener
 
-## Description
-This project makes your links shorter.<br>
+### Description
+The YaCut project is a link shortening service. Its purpose is to associate a long user link with a short one, which is offered by the user himself or provided by the service.<br>
 It provides web application access and API. 
 
-## Run service:
+### API access
+The API of the project is available for everyone. <br>
+The service provides two endpoints:<br>
+```/api/id/  # POST request to create a new short link```<br>
+```/api/id/<short_id>/  # GET request to get the original link by the specified short identifier```
+
+### Run project
 To run the service, use the commands:
 ```
 # Clone the repository and change directory:
@@ -32,10 +38,10 @@ flask db migrate -m "comment"
 flask db upgrade 
 ```
 
-## Technologies
+### Technologies
 Python 3 <br>
 Flask <br>
 SQLAlchemy <br>
 
-## The author of the project
+### The author of the project
 Anton Akulov - https://github.com/Nekustetnaz
