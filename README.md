@@ -43,5 +43,5 @@ Python 3 <br>
 Flask <br>
 SQLAlchemy <br>
 
-### The author of the project
+### Author
 Anton Akulov - https://github.com/Nekustetnaz
